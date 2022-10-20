@@ -51,28 +51,8 @@ export default function About() {
               />
             </a>
           </div> */}
-          <h2>Links</h2>
-          <ul>
-            <li>
-              Facebook: <a href="https://www.facebook.com/raihanulmd/">@raihanulmd</a>
-            </li>
-            <li>
-              GitHub: <a href="https://github.com/mdraihan34988">@mdraihan34988</a>
-            </li>
-            <li>
-              Website:{' '}
-              <Link href="https://mdraihan.netlify.app/">
-                <a>https://mdraihan.netlify.app/</a>
-              </Link>
-            </li>
-            <li>
-              LinkedIn:{' '}
-              <a href="https://www.linkedin.com/in/mdraihanulislam/">
-                https://www.linkedin.com/in/mdraihanulislam
-              </a>
-            </li>
-          </ul>
-          <h2>Contact Me</h2>
+          
+          {/* <h2>Contact Me</h2>
           <ul>
             <li>
               Phone: +880-17800-34452
@@ -80,7 +60,7 @@ export default function About() {
             <li>
               Email: <a href="mailto:mdraihanulislam716@gmail.com">mdraihanulislam716@gmail.com</a>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </Container>
