@@ -1,0 +1,19 @@
+{
+    "name": "Md. Raihanul Islam",
+    "short_name": "raihanul",
+    "description": "Full Stack Developer.",
+    "icons": [
+        {
+            "src": "/static/favicons/favicon.ico",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "display": "standalone",
+    "dir": "ltr",
+    "lang": "en-US",
+    "orientation": "portrait-primary",
+    "start_url": "../../index.html"
+}
