@@ -7,6 +7,7 @@ import cn from 'classnames';
 
 import Footer from 'components/Footer';
 import MobileMenu from 'components/MobileMenu';
+import Image from 'next/image';
 
 function NavItem({ href, text }) {
   const router = useRouter();

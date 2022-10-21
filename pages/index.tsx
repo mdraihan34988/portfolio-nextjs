@@ -12,29 +12,52 @@ export default function Home() {
     <Suspense fallback={null}>
       <Container>
         <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-16">
-          <div className="flex flex-col-reverse sm:flex-row items-start">
-            <div className="flex flex-col pr-8">
-              <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white">
+          <div className="flex w-[100%] sm:w-[100%] m-4 relative justify-center">
+                <Image
+                  alt="Md Raihanul Islam"
+                  height={176}
+                  width={176}
+                  src="/avatar.jpg"
+                  sizes="30vw"
+                  priority
+                  className="rounded-full filter"
+                />
+            </div>
+          <div className="flex flex-col-reverse sm:flex-row items-start pt-4">
+            <div className="flex flex-col" style={{textAlign: "center"}}>
+              <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white" >
                 Md. Raihanul Islam
               </h1>
               <h2 className="text-gray-700 dark:text-gray-200 mb-4">
                 Associate Software Engineer at{' '}
                 <span className="font-semibold">Line Reflection LTD</span>
               </h2>
-              <p className="text-gray-600 dark:text-gray-400 mb-16 text-justify	">
+              <p className="text-gray-600 dark:text-gray-400 mb-4 text-justify	">
               I am a CSE graduate from American International University-Bangladesh (AIUB). Now I am working as an Associate Software Engineer in Linereflection. Here, I am working on reactJs and nodeJs stack and have the experience to work with Asp.net mvc (c#) technology, mysql & mssql database.
               </p>
+              <div className="flex gap-6 flex-col md:flex-row">
+              <Link href={`/Raihanul_Islam_Resume.pdf`} >
+              <a
+                target="_blank"
+                className=
+                  'transform hover:scale-[1.01] transition-all rounded-xl text-gray-900 dark:text-gray-100 bg-gradient-to-r p-1 from-[#D8B4FE] to-[#818CF8]'
+              >
+                <div className="flex flex-col bg-white dark:bg-gray-900 rounded-lg p-1">
+                Download Resume
+                </div>
+              </a>
+            </Link>
+            <Link href={`/contact`}>
+              <a
+                className=
+                  'transform hover:scale-[1.01] transition-all rounded-xl text-gray-900 dark:text-gray-100 bg-gradient-to-r p-1 from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]'
+              >
+                <div className="flex flex-col bg-white dark:bg-gray-900 rounded-lg p-1">
+                  Hire Me
+                </div>
+              </a>
+            </Link>
             </div>
-            <div className="w-[80px] sm:w-[480px] relative mb-8 sm:mb-0 mr-auto">
-              <Image
-                alt="Md Raihanul Islam"
-                height={176}
-                width={176}
-                src="/avatar.jpg"
-                sizes="30vw"
-                priority
-                className="rounded-full filter"
-              />
             </div>
           </div>
 
