@@ -42,8 +42,22 @@ export default function Home() {
                 className=
                   'transform hover:scale-[1.01] transition-all rounded-xl text-gray-900 dark:text-gray-100 bg-gradient-to-r p-1 from-[#D8B4FE] to-[#818CF8]'
               >
-                <div className="flex flex-col bg-white dark:bg-gray-900 rounded-lg p-1">
-                Download Resume
+                <div className="flex bg-white dark:bg-gray-900 hover:bg-gray-200 dark:hover:bg-gray-800 rounded-lg p-2 justify-center">
+                  Download Resume
+                  <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      className="h-6 w-6 ml-1"
+                    >
+                      <path
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M17.5 12h-15m11.667-4l3.333 4-3.333-4zm3.333 4l-3.333 4 3.333-4z"
+                      />
+                    </svg>
                 </div>
               </a>
             </Link>
@@ -52,8 +66,21 @@ export default function Home() {
                 className=
                   'transform hover:scale-[1.01] transition-all rounded-xl text-gray-900 dark:text-gray-100 bg-gradient-to-r p-1 from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]'
               >
-                <div className="flex flex-col bg-white dark:bg-gray-900 rounded-lg p-1">
-                  Hire Me
+                <div className="flex bg-white hover:bg-gray-200 dark:hover:bg-gray-800 dark:bg-gray-900 rounded-lg p-2 justify-center">
+                  Hire Me <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      className="h-6 w-6 ml-1"
+                    >
+                      <path
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M17.5 12h-15m11.667-4l3.333 4-3.333-4zm3.333 4l-3.333 4 3.333-4z"
+                      />
+                    </svg>
                 </div>
               </a>
             </Link>

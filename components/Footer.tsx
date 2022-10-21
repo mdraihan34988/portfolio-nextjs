@@ -61,7 +61,7 @@ export default function Footer() {
         </div>
       </div> */}
       <div className="w-full flex justify-center">
-        <h6 className="content-center tracking-tight text-black dark:text-white ">Copyright © 2021 <span style={{fontWeight: 'bold'}}>Md Raihanul Islam</span> </h6>
+        <h6 className="content-center tracking-tight text-black dark:text-white ">Copyright © 2022 <span style={{fontWeight: 'bold'}}>Md Raihanul Islam</span> </h6>
       </div>
     </footer>
   );
