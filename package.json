@@ -15,6 +15,7 @@
     "classnames": "^2.3.1",
     "date-fns": "2.29.2",
     "googleapis": "48.0.0",
+    "moment": "^2.29.4",
     "motion": "^10.14.2",
     "next": "12.3.0",
     "next-auth": "4.10.3",
