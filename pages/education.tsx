@@ -8,7 +8,7 @@ export default function Education() {
     <Container title="Education – Raihanul Islam">
         <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
             <div className="section-title flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
-                <h3 className=" font-bold text-xl md:text-3xl tracking-tight text-black dark:text-white">Educational Background</h3>
+                <h3 className=" font-bold text-xl md:text-3xl tracking-tight text-black dark:text-white">Education</h3>
                 <div className="flex flex-col w-full p-2">
                 <div className="metric-card bg-white dark:bg-gray-900  text-black dark:text-white border border-gray-200 dark:border-gray-800 rounded-lg p-4 max-w-72 w-full">
                 <div
@@ -64,6 +64,7 @@ export default function Education() {
                     </ul>
                     </div>
                 </div>
+                {/* <h3 className=" font-bold text-xl md:text-3xl tracking-tight text-black dark:text-white">Certificates</h3> */}
             </div>
         </div>
     </Container>
