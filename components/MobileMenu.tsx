@@ -57,12 +57,45 @@ export default function MobileMenu() {
               <a className="flex w-auto pb-4">Home</a>
             </Link>
           </li>
+          
            <li
             className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
             style={{ transitionDelay: '175ms' }}
           >
             <Link href="/about">
               <a className="flex w-auto pb-4">About</a>
+            </Link>
+          </li>
+          <li
+            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
+            style={{ transitionDelay: '175ms' }}
+          >
+            <Link href="/education">
+              <a className="flex w-auto pb-4">Education</a>
+            </Link>
+          </li>
+          <li
+            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
+            style={{ transitionDelay: '175ms' }}
+          >
+            <Link href="/experience">
+              <a className="flex w-auto pb-4">Experience</a>
+            </Link>
+          </li>
+          <li
+            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
+            style={{ transitionDelay: '175ms' }}
+          >
+            <Link href="/service">
+              <a className="flex w-auto pb-4">Service</a>
+            </Link>
+          </li>
+          <li
+            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
+            style={{ transitionDelay: '175ms' }}
+          >
+            <Link href="/portfolio">
+              <a className="flex w-auto pb-4">Portfolio</a>
             </Link>
           </li>
           <li
