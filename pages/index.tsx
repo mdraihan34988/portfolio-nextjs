@@ -7,8 +7,100 @@ import BlogPostCard from '../components/BlogPostCard';
 import Subscribe from '../components/Subscribe';
 import VideoCard from '../components/VideoCard';
 import { FiDownload } from "react-icons/fi";
+import SkillSection from 'components/SkillSection';
 
 export default function Home() {
+  const skills = [ {
+    name: "HTML",
+    level: 100,
+    pinned: true,
+  },
+  {
+    name: "CSS",
+    level: 95,
+    pinned: true,
+  },
+  {
+    name: "Javascript",
+    level: 80,
+    pinned: true,
+  },
+  // {
+  //   name: "SASS",
+  //   level: 80,
+  //   pinned: false,
+  // },
+  {
+    name: "Bootstrap",
+    level: 90,
+    pinned: false,
+  },
+  {
+    name: "React.js",
+    level: 80,
+    pinned: true,
+  },
+  {
+    name: "Next.js",
+    level: 80,
+    pinned: true,
+  },
+  {
+    name: "Tailwind CSS",
+    level: 100,
+    pinned: true,
+  },
+  // {
+  //   name: "C Programming",
+  //   level: 80,
+  //   pinned: false,
+  // },
+  // {
+  //   name: "C++",
+  //   level: 60,
+  //   pinned: false,
+  // },
+  // {
+  //   name: "Python",
+  //   level: 85,
+  //   pinned: true,
+  // },
+  {
+    name: "MySQL",
+    level: 85,
+    pinned: true,
+  },
+  {
+    name: "Git",
+    level: 95,
+    pinned: true,
+  },
+  {
+    name: "Node.js",
+    level: 50,
+    pinned: false,
+  },
+  // {
+  //   name: "Firebase",
+  //   level: 60,
+  //   pinned: true,
+  // },
+  // {
+  //   name: "Data Structure",
+  //   level: 60,
+  //   pinned: false,
+  // },
+  // {
+  //   name: "MS Office",
+  //   level: 70,
+  //   pinned: false,
+  // },
+  // {
+  //   name: "Figma",
+  //   level: 70,
+  //   pinned: false,
+  // },
+]
   return (
     <Suspense fallback={null}>
       <Container>
@@ -185,7 +277,13 @@ export default function Home() {
           </a>
           <span className="h-16" />
           <Subscribe /> */}
+           <div className="pt-4 text-black">
+              <SkillSection skills={skills} />
+              {/* <BlogsSection blogs={blogs} />
+              <Contact /> */}
+            </div>
         </div>
+       
       </Container>
     </Suspense>
   );

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 import NowPlaying from 'components/NowPlaying';
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const ExternalLink = ({ href, children }) => (
   <a
@@ -60,7 +61,14 @@ export default function Footer() {
           </Link>
         </div>
       </div> */}
-      <div className="w-full flex justify-center">
+      <div className="w-full flex justify-center text-black dark:text-white">
+        <Link href="https://www.facebook.com/raihanulmd"><a target="_blank"><FaFacebook className="h-8 w-8 p-1"/></a></Link>
+        <Link href="https://github.com/mdraihan34988"><a target="_blank"><FaGithub className="h-8 w-8 p-1"/></a></Link>
+        <Link href="https://www.linkedin.com/in/mdraihanulislam/"><a target="_blank"><FaLinkedin className="h-8 w-8 p-1"/></a></Link>
+        <Link href="https://www.instagram.com/raihan7219"><a target="_blank"><FaInstagram className="h-8 w-8 p-1"/></a></Link>
+        {/* <h6 className="content-center tracking-tight text-black dark:text-white ">Copyright © 2022 <span style={{fontWeight: 'bold'}}>Md Raihanul Islam</span> </h6> */}
+      </div>
+      <div className="w-full flex justify-center pt-2">
         <h6 className="content-center tracking-tight text-black dark:text-white ">Copyright © 2022 <span style={{fontWeight: 'bold'}}>Md Raihanul Islam</span> </h6>
       </div>
     </footer>
