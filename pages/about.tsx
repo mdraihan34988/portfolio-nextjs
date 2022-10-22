@@ -9,12 +9,12 @@ import moment from 'moment';
 export default function About() {
   return (
     <Container title="About – Raihanul Islam">
-      <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
+      <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full pt-4">
         <h1 className="font-bold text-xl md:text-3xl tracking-tight text-black dark:text-white">
           About Me
         </h1>
         <div className="mb-8 prose dark:prose-dark px-6">
-          <h2>Job Title</h2>
+          <h3>Job Title</h3>
           <p>Md. Raihanul Islam, Associate Software Engineer at <b>Line Reflection LTD</b></p>
           <h3>Bio</h3>
           <p>I have 2 years of industrial experience. In this period of time I am working with reactjs, nodejs stack. I am working myself to gain that knowledge as much as I can.</p>
@@ -63,25 +63,25 @@ export default function About() {
             </li>
           </ul> */}
           <h3>Personal Information</h3>
-          <ul className="flex gap-6 flex-col md:flex-row">
+          <ul className="flex gap-6 flex-col md:flex-row about-ul ">
             <li className=" w-full md:w-1/2"><span className="font-bold">Work : </span>Full Stack Developer</li>
             <li className=" w-full md:w-1/2"><span className="font-bold">Freelance : </span>Available</li>
           </ul>
-          <ul className="flex gap-6 flex-col md:flex-row">
+          <ul className="flex gap-6 flex-col md:flex-row about-ul">
             <li className=" w-full md:w-1/2"><span className="font-bold">Birthday : </span>27 January 1998 </li>
             <li className=" w-full md:w-1/2"><span className="font-bold">Age : </span>{moment().diff('1998-01-27', 'years')}</li>
           </ul>
-          <ul className="flex gap-6 flex-col md:flex-row">
+          <ul className="flex gap-6 flex-col md:flex-row about-ul">
             <li className=" w-full md:w-1/2"><span className="font-bold">City : </span>Dhaka</li>
             <li className=" w-full md:w-1/2"><span className="font-bold">Country : </span>Bangladesh</li>
           </ul>
-          <ul className="flex gap-6 flex-col md:flex-row">
+          <ul className="flex gap-6 flex-col md:flex-row about-ul">
             <li className=" w-full md:w-1/2"><span className="font-bold">Gender : </span>Male</li>
             <li className=" w-full md:w-1/2"><span className="font-bold">Language : </span>Bangla, English</li>
           </ul>
-          <ul className="flex gap-6 flex-col md:flex-row">
+          {/* <ul className="flex gap-6 flex-col md:flex-row">
             <li className=" w-full"><span className="font-bold">Degree : </span>BSc. in Computer Science and Engineering</li>
-          </ul>
+          </ul> */}
           
         </div>
       </div>

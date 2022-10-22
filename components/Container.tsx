@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { useTheme } from 'next-themes';
 import NextLink from 'next/link';
 import cn from 'classnames';
-
+import { motion, useAnimation, AnimatePresence } from "framer-motion";
 import Footer from 'components/Footer';
 import MobileMenu from 'components/MobileMenu';
 import Image from 'next/image';
@@ -32,6 +32,41 @@ function NavItem({ href, text }) {
 export default function Container(props) {
   const [mounted, setMounted] = useState(false);
   const { resolvedTheme, setTheme } = useTheme();
+
+  const navRef = useRef(null);
+  const control = useAnimation();
+
+  const addShadowToNavbar = useCallback(() => {
+    if (window.pageYOffset > 10) {
+      navRef.current.classList.add(
+        ...[
+          "shadow-xl",
+          "backdrop-blur-xl",
+          "bg-gray",
+          "dark:bg-darkSecondary",
+        ]
+      );
+
+      control.start("visible");
+    } else {
+      navRef.current.classList.remove(
+        ...[
+          "shadow-xl",
+          "backdrop-blur-xl",
+          "bg-gray",
+          "dark:bg-darkSecondary",
+        ]
+      );
+      control.start("hidden");
+    }
+  }, [control]);
+
+  useEffect(() => {
+    window.addEventListener("scroll", addShadowToNavbar);
+    return () => {
+      window.removeEventListener("scroll", addShadowToNavbar);
+    };
+  }, [addShadowToNavbar]);
 
   // After mounting, we have access to the theme
   useEffect(() => setMounted(true), []);
@@ -63,11 +98,11 @@ export default function Container(props) {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-      <div className="flex flex-col justify-center px-8">
-        <nav className="flex items-center justify-between w-full relative max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pt-8 pb-4 sm:pb-8  text-gray-900 bg-gray-50  dark:bg-gray-900 bg-opacity-60 dark:text-gray-100">
-          <a href="#skip" className="skip-nav">
+      <div className="flex flex-col justify-center px-8 sticky top-0 z-30" ref={navRef}>
+        <nav className="flex items-center justify-between w-full relative max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pt-4 pb-4 sm:pb-4  text-gray-900 bg-gray-50  dark:bg-gray-900 bg-opacity-60 dark:text-gray-100">
+          {/* <a href="#skip" className="skip-nav">
             Skip to content
-          </a>
+          </a> */}
           <div className="ml-[-0.60rem]" >
             <MobileMenu />
             <NavItem href="/" text="Home" />

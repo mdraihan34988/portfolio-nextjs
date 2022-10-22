@@ -110,8 +110,8 @@ html {
 
 .prose > :first-child {
   /* Override removing top margin, causing layout shift */
-  margin-top: 1.25em !important;
-  margin-bottom: 1.25em !important;
+  margin-top: 1em !important;
+  /* margin-bottom: 1em !important; */
 }
 
 .token.comment,
@@ -167,6 +167,11 @@ html {
 .token.important,
 .token.variable {
   @apply text-yellow-500;
+}
+
+.about-ul {
+  margin-top:0!important;
+  margin-bottom:0!important;
 }
 
 code[class*='language-'],

@@ -6,12 +6,13 @@ import Container from '../components/Container';
 import BlogPostCard from '../components/BlogPostCard';
 import Subscribe from '../components/Subscribe';
 import VideoCard from '../components/VideoCard';
+import { FiDownload } from "react-icons/fi";
 
 export default function Home() {
   return (
     <Suspense fallback={null}>
       <Container>
-        <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-16">
+        <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-16 pt-4">
           <div className="flex w-[100%] sm:w-[100%] m-4 relative justify-center">
                 <Image
                   alt="Md Raihanul Islam"
@@ -43,8 +44,8 @@ export default function Home() {
                   'transform hover:scale-[1.01] transition-all rounded-xl text-gray-900 dark:text-gray-100 bg-gradient-to-r p-1 from-[#D8B4FE] to-[#818CF8]'
               >
                 <div className="flex bg-white dark:bg-gray-900 hover:bg-gray-200 dark:hover:bg-gray-800 rounded-lg p-2 justify-center">
-                  Download Resume
-                  <svg
+                <FiDownload /> <p className="px-1">Download Resume</p>
+                  {/* <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -57,7 +58,7 @@ export default function Home() {
                         strokeWidth={2}
                         d="M17.5 12h-15m11.667-4l3.333 4-3.333-4zm3.333 4l-3.333 4 3.333-4z"
                       />
-                    </svg>
+                    </svg> */}
                 </div>
               </a>
             </Link>
