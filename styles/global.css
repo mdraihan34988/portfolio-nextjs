@@ -173,7 +173,6 @@ html {
   margin-top:0!important;
   margin-bottom:0!important;
 }
-
 code[class*='language-'],
 pre[class*='language-'] {
   @apply text-gray-800 dark:text-gray-50;

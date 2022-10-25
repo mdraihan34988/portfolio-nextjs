@@ -5,9 +5,9 @@ import Link from "next/link";
 import OgImage from "./OgImage";
 
 
-export default function Project({ project }) {
+export default function Projects({ project }) {
   return (
-    <div className="card">
+    <div className="bg-white dark:bg-black p-5 sm:p-10 flex flex-col sm:flex-row gap-8 items-center max-w-2xl shadow-md rounded-lg mt-[30%] sm:mt-8 transition-all">
       <OgImage
         src={project.coverURL}
         alt={project.name}
@@ -36,6 +36,8 @@ export default function Project({ project }) {
         </div>
 
         <div className="mt-auto p-2 w-fit flex items-center gap-4">
+
+         {project.githubURL && 
           <Link href={project.githubURL} passHref>
             <a
               title="Source Code on GitHub"
@@ -47,6 +49,7 @@ export default function Project({ project }) {
               <BsGithub className="w-6 h-6 hover:scale-110 active:scale-90 transition-all" />
             </a>
           </Link>
+          }
 
           {project.previewURL && (
             <Link href={project.previewURL} passHref>
