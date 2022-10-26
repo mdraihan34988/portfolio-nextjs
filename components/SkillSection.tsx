@@ -64,7 +64,7 @@ export default function SkillSection({ skills }) {
   return (
     <section className="mx-5">
       <AnimatedHeading
-        className="w-full font-bold text-3xl text-left my-2 font-inter"
+        className="w-full font-bold text-3xl text-left my-2 font-inter text-black dark:text-white"
         variants={headingFromLeft}
         infinity=""
       >

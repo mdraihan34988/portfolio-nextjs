@@ -12,7 +12,7 @@ export default function Project() {
     {
       id: 1,
       name: "US Immigration Visa File Website",
-      coverURL: "/fVbFbqw.png",
+      coverURL: "/assets/filemyvisa.png",
       description:
         "This is a US immigration application filing guided website.",
       githubURL: "",
@@ -23,7 +23,7 @@ export default function Project() {
     {
       id: 2,
       name: "Admin Panel to manage US Immigration Website",
-      coverURL: "/4dZRefD.png",
+      coverURL: "/assets/adminfilemyvisa.png",
       description:
         "An admin panel to manage US immigration website.",
       githubURL: "",
@@ -31,21 +31,21 @@ export default function Project() {
       tools: ["reactjs","nodejs","mssql","docker","google cloud run"],
       pinned: false,
     },
-    {
-      id: 3,
-      name: "NVR Demo",
-      coverURL: "/SbpkJpF.png",
-      description:
-        "A demo application which can translated into any language and an nvr application fill up online and get the pdf fill with information.",
-      githubURL: "",
-      previewURL: "https://nvr.linereflection.com/",
-      tools: ["reactjs", "nodejs"],
-      pinned: false,
-    },
+    // {
+    //   id: 3,
+    //   name: "NVR Demo",
+    //   coverURL: "/SbpkJpF.png",
+    //   description:
+    //     "A demo application which can translated into any language and an nvr application fill up online and get the pdf fill with information.",
+    //   githubURL: "",
+    //   previewURL: "https://nvr.linereflection.com/",
+    //   tools: ["reactjs", "nodejs"],
+    //   pinned: false,
+    // },
     {
       id: 4,
       name: "Fundrising Application",
-      coverURL: "/bDQJuhI.png",
+      coverURL: "/assets/peakfund.png",
       description:
         "A fundraising application where a person can raise funds for his/her concerns and a person can donate which concerns touch him/her most.",
       githubURL: "",
@@ -56,7 +56,7 @@ export default function Project() {
     {
       id: 5,
       name: "Pharmacy & Healthcare Platform",
-      coverURL: "/bDQJuhI.png",
+      coverURL: "/assets/epharma.png",
       description:
         "Work on a online pharmacy and healthcare platform. Where any person can order medicine",
       githubURL: "",
@@ -69,7 +69,7 @@ export default function Project() {
     {
       id: 1,
       name: "Ecommerce Application",
-      coverURL: "/fVbFbqw.png",
+      coverURL: "/assets/schuchishoili.png",
       description:
         "Working on front end of an ecommerce application",
       githubURL: "",
@@ -80,7 +80,7 @@ export default function Project() {
     {
       id: 2,
       name: "Project management application",
-      coverURL: "/fVbFbqw.png",
+      coverURL: "/assets/projectmanagement.png",
       description:
         "A simple project management application with drag and drop project status.",
       githubURL: "https://github.com/mdraihan34988/project-manager-redux",
@@ -91,7 +91,7 @@ export default function Project() {
     {
       id: 3,
       name: "Chatting application",
-      coverURL: "/fVbFbqw.png",
+      coverURL: "/assets/chat.png",
       description:
         "A real-time chatting application where anyone can communicate in real-time experience",
       githubURL: "https://github.com/mdraihan34988/chatting-application",
@@ -102,18 +102,18 @@ export default function Project() {
     {
       id: 4,
       name: "Expense Tracker",
-      coverURL: "/4dZRefD.png",
+      coverURL: "/assets/expensetracker.png",
       description:
         "Expense tarcker application for track the expenses.",
       githubURL: "https://github.com/mdraihan34988/expanse-tracker-redux",
-      previewURL: "https://expense-track-redux.netlify.app/s",
+      previewURL: "https://expense-track-redux.netlify.app/",
       tools: ["reactjs","redux toolkit","rtk query","cache-control","tailwind css","router dom v6","json server"],
       pinned: false,
     },
     {
       id: 5,
       name: "Todo application",
-      coverURL: "/SbpkJpF.png",
+      coverURL: "/assets/todo.png",
       description:
         "Simple todo application to track the todos.",
       githubURL: "https://github.com/mdraihan34988/rtk-query-todo-application",
@@ -124,7 +124,7 @@ export default function Project() {
     {
       id: 6,
       name: "Video Gallery",
-      coverURL: "/bDQJuhI.png",
+      coverURL: "/assets/videogallery.png",
       description:
         "A simple video gallery application.",
       githubURL: "https://github.com/mdraihan34988/video-gallery-redux",
@@ -135,29 +135,29 @@ export default function Project() {
     {
       id: 7,
       name: "Blog Site",
-      coverURL: "/bDQJuhI.png",
+      coverURL: "/assets/blog.png",
       description:
         "A simple blog site application.",
       githubURL: "https://github.com/mdraihan34988/redux-blog-site",
       previewURL: "https://blog-site-redux.netlify.app/",
-      tools: ["reactjs","redux toolkit",,"tailwind css","json server"],
+      tools: ["reactjs","redux toolkit","tailwind css","json server"],
       pinned: false,
     },
     {
       id: 8,
       name: "Shopping Cart Application",
-      coverURL: "/bDQJuhI.png",
+      coverURL: "/assets/cart.png",
       description:
         "A simple shopping cart application.",
       githubURL: "https://github.com/mdraihan34988/shopping-cart-application",
-      previewURL: "https://blog-site-redux.netlify.app/",
+      previewURL: "https://shoppingcart-reactredux.netlify.app/",
       tools: ["reactjs","redux",,"tailwind css","json server"],
       pinned: false,
     },
     {
       id: 9,
       name: "CLI CV",
-      coverURL: "/bDQJuhI.png",
+      coverURL: "/assets/clicv.png",
       description:
         "A command line cv application.",
       githubURL: "https://github.com/mdraihan34988/cli-cv",
@@ -166,20 +166,19 @@ export default function Project() {
       pinned: false,
     },
     {
-      id: 10,
-      name: "React Custome Build",
-      coverURL: "/bDQJuhI.png",
+      id: 12,
+      name: "Inventory management system.",
+      coverURL: "/assets/ims.png",
       description:
-        "A simple experiment to react custom build.",
-      githubURL: "https://github.com/mdraihan34988/react_custom_build",
-      previewURL: "https://manual-react-build.netlify.app/",
-      tools: ["nodejs"],
+        "A full stack inventory management application for my asp.net course at my university.",
+      githubURL: "https://github.com/mdraihan34988/FullStack_IMS",
+      previewURL: "",
+      tools: ["asp.net","web api 2","entity framework(code first)","generic repository pattern", "Rest API", "HATEOAS","html","css","jquery","ajax","bootstrap 4","mssql"],
       pinned: false,
-    },
-    {
+    } ,{
       id: 11,
       name: "Covid-19 counter application",
-      coverURL: "/bDQJuhI.png",
+      coverURL: "/assets/covidcal.png",
       description:
         "A simple covid-19 case counter application.",
       githubURL: "https://github.com/mdraihan34988/COVID-19-Application",
@@ -188,14 +187,14 @@ export default function Project() {
       pinned: false,
     },
     {
-      id: 12,
-      name: "Inventory management system.",
-      coverURL: "/bDQJuhI.png",
+      id: 10,
+      name: "React Custome Build",
+      coverURL: "/assets/custom.png",
       description:
-        "A full stack inventory management application for my asp.net course at my university.",
-      githubURL: "https://github.com/mdraihan34988/FullStack_IMS",
-      previewURL: "",
-      tools: ["asp.net","web api 2","entity framework(code first)","generic repository pattern", "Rest API", "HATEOAS","html","css","jquery","ajax","bootstrap 4","mssql"],
+        "A simple experiment to react custom build.",
+      githubURL: "https://github.com/mdraihan34988/react_custom_build",
+      previewURL: "https://manual-react-build.netlify.app/",
+      tools: ["nodejs"],
       pinned: false,
     }
   ];
