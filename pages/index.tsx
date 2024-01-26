@@ -10,21 +10,51 @@ import { FiDownload } from "react-icons/fi";
 import SkillSection from 'components/SkillSection';
 
 export default function Home() {
-  const skills = [ {
-    name: "HTML",
-    level: 100,
-    pinned: true,
-  },
-  {
-    name: "CSS",
-    level: 95,
-    pinned: true,
-  },
-  {
-    name: "Javascript",
-    level: 80,
-    pinned: true,
-  },
+  const skills = [ 
+    {
+      name: "React.js",
+      level: 80,
+      pinned: true,
+    },
+    {
+      name: "Next.js",
+      level: 80,
+      pinned: true,
+    }, {
+      name: "Javascript",
+      level: 80,
+      pinned: true,
+    },
+    {
+      name: "Node.js",
+      level: 50,
+      pinned: false,
+    },
+    {
+      name: "Laravel",
+      level: 50,
+      pinned: false,
+    },
+    {
+      name: "MySQL",
+      level: 85,
+      pinned: true,
+    },
+    {
+      name: "Git",
+      level: 95,
+      pinned: true,
+    },{
+      name: "HTML",
+      level: 100,
+      pinned: true,
+    },
+    {
+      name: "CSS",
+      level: 95,
+      pinned: true,
+    },
+ 
   // {
   //   name: "SASS",
   //   level: 80,
@@ -34,16 +64,6 @@ export default function Home() {
     name: "Bootstrap",
     level: 90,
     pinned: false,
-  },
-  {
-    name: "React.js",
-    level: 80,
-    pinned: true,
-  },
-  {
-    name: "Next.js",
-    level: 80,
-    pinned: true,
   },
   {
     name: "Tailwind CSS",
@@ -65,21 +85,7 @@ export default function Home() {
   //   level: 85,
   //   pinned: true,
   // },
-  {
-    name: "MySQL",
-    level: 85,
-    pinned: true,
-  },
-  {
-    name: "Git",
-    level: 95,
-    pinned: true,
-  },
-  {
-    name: "Node.js",
-    level: 50,
-    pinned: false,
-  },
+
   // {
   //   name: "Firebase",
   //   level: 60,

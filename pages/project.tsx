@@ -10,6 +10,50 @@ import Projects from 'components/Projects';
 export default function Project() {
   const projectsProfesional = [
     {
+      id: 6,
+      name: "Online learning platform.",
+      coverURL: "/assets/twtor.png",
+      description:
+        "Online learning platform.",
+      githubURL: "",
+      previewURL: "https://twtor.xyz/",
+      tools: ["nextjs", "reactjs","laravel","mssql","docker","google cloud run"],
+      pinned: false,
+    },
+    {
+      id: 7,
+      name: "Admin Panel to manage Twtor",
+      coverURL: "/assets/twtor_admin.png",
+      description:
+        "Admin Panel to manage Twtor Platform.",
+      githubURL: "",
+      previewURL: "https://admin.twtor.xyz/",
+      tools: ["reactjs","laravel","mssql","docker","google cloud run"],
+      pinned: false,
+    },
+    {
+      id: 8,
+      name: "Truehealthbooster",
+      coverURL: "/assets/truhealthbooster.png",
+      description:
+        "Online Natural supplement selling Platform.",
+      githubURL: "",
+      previewURL: "https://truehealthbooster.com/",
+      tools: ["laravel","mysql"],
+      pinned: false,
+    },
+    {
+      id: 5,
+      name: "Pharmacy & Healthcare Platform",
+      coverURL: "/assets/epharma.png",
+      description:
+        "Work on a online pharmacy and healthcare platform. Where any person can order medicine",
+      githubURL: "",
+      previewURL: "https://www.epharma.com.bd/",
+      tools: ["laravel","mysql"],
+      pinned: false,
+    },
+    {
       id: 1,
       name: "US Immigration Visa File Website",
       coverURL: "/assets/filemyvisa.png",
@@ -53,17 +97,7 @@ export default function Project() {
       tools: ["python"],
       pinned: false,
     },
-    {
-      id: 5,
-      name: "Pharmacy & Healthcare Platform",
-      coverURL: "/assets/epharma.png",
-      description:
-        "Work on a online pharmacy and healthcare platform. Where any person can order medicine",
-      githubURL: "",
-      previewURL: "https://www.epharma.com.bd/",
-      tools: ["php","laravel"],
-      pinned: false,
-    }
+    
   ];
   const projectsPersonal = [
     {
@@ -203,7 +237,7 @@ export default function Project() {
         <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full pt-4">
             <div className="section-title flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
                 <h3 className=" font-bold text-xl md:text-xl tracking-tight text-black dark:text-white">Professional Projects</h3>
-                <p className=" font-bold text-black dark:text-white p-2">I works on 5 projects in my 2 years of professional career.</p>
+                <p className=" font-bold text-black dark:text-white p-2">I works on {projectsProfesional.length} projects in my 2 years of professional career.</p>
                 <AnimatedDiv
                     variants={FadeContainer}
                     className="grid grid-cols-1 gap-4 mx-auto md:ml-[20%] xl:ml-[24%]"

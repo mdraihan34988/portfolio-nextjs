@@ -25,7 +25,7 @@ export default function Experience() {
                             <ul className="px-8 list-disc">
                                     <li>Backend: <span className="font-bold"> nodeJS, laravel </span></li>
                                     <li>Frontend:<span className="font-bold"> reactJS, nextJS </span></li>
-                                    <li>Database:<span className="font-bold"> MSSQL, MSSQL </span></li>
+                                    <li>Database:<span className="font-bold"> Mysql, MSSQL </span></li>
                             </ul>
                         </span>
                     </div>
