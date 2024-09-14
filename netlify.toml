@@ -1,7 +1,5 @@
 [build.environment]
   NODE_VERSION = "16"
-
-[build.environment]
   NPM_FLAGS = "--legacy-peer-deps"  # Add npm install flag
 
 [context.production.environment]
