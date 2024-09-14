@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
+    "@netlify/plugin-nextjs": "^5.7.1",
     "@prisma/client": "^4.5.0",
     "@sanity/image-url": "^1.0.1",
     "@sanity/webhook": "^2.0.0",
