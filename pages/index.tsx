@@ -137,8 +137,7 @@ export default function Home() {
                 <span className="font-semibold">Line Reflection LTD</span>
               </h2>
               <p className="text-gray-600 dark:text-gray-400 mb-4 text-justify	">
-              I am a CSE graduate from American International University-Bangladesh (AIUB). Now I am working as an Associate Software Engineer in Linereflection. Here, I am working on reactJs and nodeJs stack and have the experience to work with Asp.net mvc (c#) technology, mysql & mssql database.
-              </p>
+              I am a software engineer with 6 years of hands-on experience in crafting full-stack web applications using the latest technologies. My journey has led me through a diverse landscape of modern frameworks and tools, including React, Next.js, Node.js, Laravel, and Spring. I thrive on turning complex challenges into elegant solutions, particularly in areas such as PHP Laravel applications, eCommerce platforms, SaaS solutions, and Learning Management Systems (LMS). My expertise extends to integrating payment gateways, ensuring smooth and secure transactions for users. Passionate about building intuitive and high-performance applications, I enjoy pushing the boundaries of what's possible with technology.              </p>
               <div className="flex gap-6 flex-col md:flex-row">
               <Link href={`/Raihanul_Islam_Resume.pdf`} >
               <a
