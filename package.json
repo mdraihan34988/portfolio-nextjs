@@ -2,9 +2,10 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "build": "next build",
+    "preinstall": "npx npm-force-resolutions",
     "dev": "next dev",
     "start": "next start",
+    "build": "next build",
     "lint": "next lint"
   },
   "dependencies": {
@@ -15,7 +16,7 @@
     "@tailwindcss/typography": "0.5.7",
     "classnames": "^2.3.1",
     "date-fns": "2.29.2",
-    "framer-motion": "^7.6.1",
+    "framer-motion": "^11.5.4",
     "googleapis": "48.0.0",
     "moment": "^2.29.4",
     "motion": "^10.14.2",
@@ -25,8 +26,8 @@
     "next-sanity": "^0.8.4",
     "next-themes": "^0.2.0",
     "nextjs-progressbar": "0.0.16",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-icons": "^4.6.0",
     "react-ripples": "^2.2.1",
     "react-toastify": "^9.0.8",
@@ -43,6 +44,7 @@
     "eslint": "8.23.0",
     "eslint-config-next": "12.3.0",
     "globby": "13.1.2",
+    "npm-force-resolutions": "^0.0.10",
     "postcss": "^8.4.16",
     "prettier": "2.7.1",
     "prisma": "4.3.1",
@@ -61,5 +63,8 @@
     "singleQuote": true,
     "tabWidth": 2,
     "trailingComma": "none"
+  },
+  "resolutions": {
+    "framer-motion/useId": "17.0.0"
   }
 }
