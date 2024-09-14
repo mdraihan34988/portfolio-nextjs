@@ -12,7 +12,7 @@ import {
   SiMysql,
   SiFirebase,
 } from "react-icons/si";
-import { FaReact, FaBootstrap, FaNodeJs, FaLaravel } from "react-icons/fa";
+import { FaReact, FaBootstrap, FaNodeJs, FaLaravel, FaJava } from "react-icons/fa";
 import * as WindowsAnimation from "../lib/windowsAnimation";
 
 export default function SkillSection({ skills }) {
@@ -57,6 +57,9 @@ export default function SkillSection({ skills }) {
         break;
       case "laravel":
         Icon = <FaLaravel className="w-8 h-8"/>;
+        break;
+      case "spring boot":
+        Icon = <FaJava className="w-8 h-8"/>;
         break;
       default:
         break;

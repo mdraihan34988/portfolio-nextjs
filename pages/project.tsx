@@ -10,6 +10,17 @@ import Projects from 'components/Projects';
 export default function Project() {
   const projectsProfesional = [
     {
+      id: 10,
+      name: "Employee Recognition.",
+      coverURL: "/assets/loopstar.png",
+      description:
+        "Employee Recognition platform.",
+      githubURL: "",
+      previewURL: "https://loopstar.netlify.app/signin",
+      tools: ["angular", "spring boot","redis","kafka","postgresql","docker","aws"],
+      pinned: false,
+    },
+    {
       id: 6,
       name: "Online learning platform.",
       coverURL: "/assets/twtor.png",
@@ -18,6 +29,17 @@ export default function Project() {
       githubURL: "",
       previewURL: "https://twtor.xyz/",
       tools: ["nextjs", "reactjs","laravel","mssql","docker","google cloud run"],
+      pinned: false,
+    },
+    {
+      id: 5,
+      name: "Pharmacy & Healthcare Platform",
+      coverURL: "/assets/epharma.png",
+      description:
+        "Work on a online pharmacy and healthcare platform. Where any person can order medicine",
+      githubURL: "",
+      previewURL: "https://www.epharma.com.bd/",
+      tools: ["laravel","mysql"],
       pinned: false,
     },
     {
@@ -42,17 +64,7 @@ export default function Project() {
       tools: ["laravel","mysql"],
       pinned: false,
     },
-    {
-      id: 5,
-      name: "Pharmacy & Healthcare Platform",
-      coverURL: "/assets/epharma.png",
-      description:
-        "Work on a online pharmacy and healthcare platform. Where any person can order medicine",
-      githubURL: "",
-      previewURL: "https://www.epharma.com.bd/",
-      tools: ["laravel","mysql"],
-      pinned: false,
-    },
+    
     {
       id: 1,
       name: "US Immigration Visa File Website",
@@ -237,7 +249,7 @@ export default function Project() {
         <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full pt-4">
             <div className="section-title flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
                 <h3 className=" font-bold text-xl md:text-xl tracking-tight text-black dark:text-white">Professional Projects</h3>
-                <p className=" font-bold text-black dark:text-white p-2">I works on {projectsProfesional.length} projects in my 2 years of professional career.</p>
+                <p className=" font-bold text-black dark:text-white p-2">I works on {projectsProfesional.length} projects in my professional career.</p>
                 <AnimatedDiv
                     variants={FadeContainer}
                     className="grid grid-cols-1 gap-4 mx-auto md:ml-[20%] xl:ml-[24%]"

@@ -70,6 +70,11 @@ export default function Home() {
     level: 100,
     pinned: true,
   },
+  {
+    name: "Spring Boot",
+    level: 100,
+    pinned: true,
+  },
   // {
   //   name: "C Programming",
   //   level: 80,
@@ -141,7 +146,7 @@ export default function Home() {
                 className=
                   'transform hover:scale-[1.01] transition-all rounded-xl text-gray-900 dark:text-gray-100 bg-gradient-to-r p-1 from-[#D8B4FE] to-[#818CF8]'
               >
-                <div className="flex bg-white dark:bg-gray-900 hover:bg-gray-200 dark:hover:bg-gray-800 rounded-lg p-2 justify-center">
+                <div className="flex bg-white dark:bg-gray-900 hover:bg-gray-200 dark:hover:bg-gray-800 rounded-lg p-2 justify-center items-center">
                 <FiDownload /> <p className="px-1">Download Resume</p>
                   {/* <svg
                       xmlns="http://www.w3.org/2000/svg"
