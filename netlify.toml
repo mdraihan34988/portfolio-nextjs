@@ -2,5 +2,5 @@
   NODE_VERSION = "16"
 
 [build]
-  command = "npm install --legacy-peer-deps && npm run build"
+  command = "npm i --legacy-peer-deps && npm run build"
   publish = "build"  # Path to your publish directory, e.g., 'build' for React
