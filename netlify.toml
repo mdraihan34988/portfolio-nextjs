@@ -4,6 +4,3 @@
 
 [context.production.environment]
   NPM_FLAGS = "--legacy-peer-deps" 
-
-[build]
-  command = "npm i --legacy-peer-deps && npm run build"
