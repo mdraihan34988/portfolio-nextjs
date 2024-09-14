@@ -33,7 +33,7 @@ export default function Home() {
     {
       name: "Laravel",
       level: 50,
-      pinned: false,
+      pinned: true,
     },
     {
       name: "MySQL",
@@ -63,7 +63,7 @@ export default function Home() {
   {
     name: "Bootstrap",
     level: 90,
-    pinned: false,
+    pinned: true,
   },
   {
     name: "Tailwind CSS",
