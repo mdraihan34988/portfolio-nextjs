@@ -6,5 +6,5 @@
   NPM_FLAGS = "--legacy-peer-deps" 
 
 [build]
-  command = "npm run install-legacy && npm run build"
+  command = "npm i --legacy-peer-deps && npm run build"
   publish = "build"  # Path to your publish directory, e.g., 'build' for React
