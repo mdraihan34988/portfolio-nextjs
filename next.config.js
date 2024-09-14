@@ -2,9 +2,6 @@
  * @type {import('next').NextConfig}
  */
 module.exports = {
-  output: 'export', 
-  // Define the output directory
-  distDir: 'out',
   reactStrictMode: true,
   images: {
     domains: [
