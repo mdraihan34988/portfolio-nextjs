@@ -64,7 +64,7 @@ export default function About() {
           </ul> */}
           <h3>Personal Information</h3>
           <ul className="flex gap-6 flex-col md:flex-row about-ul ">
-            <li className=" w-full md:w-1/2"><span className="font-bold">Work : </span>Full Stack Developer</li>
+            <li className=" w-full md:w-1/2"><span className="font-bold">Work : </span>Software Engineer</li>
             <li className=" w-full md:w-1/2"><span className="font-bold">Freelance : </span>Available</li>
           </ul>
           <ul className="flex gap-6 flex-col md:flex-row about-ul">
