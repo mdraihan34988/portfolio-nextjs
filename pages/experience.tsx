@@ -19,7 +19,7 @@ export default function Experience() {
                         2021 - Present
                     </div>
                 </div>
-                    <h2 className="font-bold mt-2"><Link href="https://linereflection.com/"><a target="_blank"><span className="hover:bg-gray-200 dark:hover:bg-gray-800" style={{color:'blue'}}>Associate Software Engineer (Line Reflection LTD)</span></a></Link></h2>
+                    <h2 className="font-bold mt-2"><Link href="https://linereflection.com/"><a target="_blank"><span className="hover:bg-gray-200 dark:hover:bg-gray-800" style={{color:'blue'}}>Lead Software Engineer (Line Reflection LTD)</span></a></Link></h2>
                         <span>
                             I am working as a software engineer at Line Reflection LTD. After joining Line Reflection LTD, I work with a lot of technologies here. Here my key role is to develop application -
                             <ul className="px-8 list-disc">
