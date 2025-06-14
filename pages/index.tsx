@@ -133,7 +133,7 @@ export default function Home() {
                 Md. Raihanul Islam
               </h1>
               <h2 className="text-gray-700 dark:text-gray-200 mb-4">
-                Associate Software Engineer at{' '}
+                Lead Software Engineer at{' '}
                 <span className="font-semibold">Line Reflection LTD</span>
               </h2>
               <p className="text-gray-600 dark:text-gray-400 mb-4 text-justify	">
