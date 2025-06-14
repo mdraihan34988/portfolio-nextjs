@@ -74,8 +74,8 @@ export default function Container(props) {
   const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
-    title: 'Raihanul Islam – Full Stack Developer',
-    description: `Full Stack Developer, JavaScript enthusiast.`,
+    title: 'Raihanul Islam – Software Engineer',
+    description: `Software Engineer, Full Stack Developer, JavaScript enthusiast`,
     image: 'https://mdraihan.netlify.app/static/images/lee-banner.png',
     type: 'website',
     ...customMeta
