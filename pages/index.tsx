@@ -8,6 +8,7 @@ import Subscribe from '../components/Subscribe';
 import VideoCard from '../components/VideoCard';
 import { FiDownload } from "react-icons/fi";
 import SkillSection from 'components/SkillSection';
+import moment from 'moment';
 
 export default function Home() {
   const skills = [ 
@@ -137,7 +138,7 @@ export default function Home() {
                 <span className="font-semibold">Line Reflection LTD</span>
               </h2>
               <p className="text-gray-600 dark:text-gray-400 mb-4 text-justify	">
-              I am a software engineer with 6 years of hands-on experience in crafting full-stack web applications using the latest technologies. My journey has led me through a diverse landscape of modern frameworks and tools, including React, Next.js, Node.js, Laravel, and Spring. I thrive on turning complex challenges into elegant solutions, particularly in areas such as PHP Laravel applications, eCommerce platforms, SaaS solutions, and Learning Management Systems (LMS). My expertise extends to integrating payment gateways, ensuring smooth and secure transactions for users. Passionate about building intuitive and high-performance applications, I enjoy pushing the boundaries of what's possible with technology.              </p>
+              I am a software engineer with {moment().diff(moment("2019-06-01"), 'years')} years of hands-on experience in crafting full-stack web applications using the latest technologies. My journey has led me through a diverse landscape of modern frameworks and tools, including React, Next.js, Node.js, Laravel, and Spring. I thrive on turning complex challenges into elegant solutions, particularly in areas such as PHP Laravel applications, eCommerce platforms, SaaS solutions, and Learning Management Systems (LMS). My expertise extends to integrating payment gateways, ensuring smooth and secure transactions for users. Passionate about building intuitive and high-performance applications, I enjoy pushing the boundaries of what's possible with technology.              </p>
               <div className="flex gap-6 flex-col md:flex-row">
               <Link href={`/Raihanul_Islam_Resume.pdf`} >
               <a

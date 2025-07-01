@@ -17,7 +17,7 @@ export default function About() {
           <h3>Job Title</h3>
           <p>Md. Raihanul Islam, Associate Software Engineer at <b>Line Reflection LTD</b></p>
           <h3>Bio</h3>
-          <p>I have 2 years of industrial experience. In this period of time I am working with reactjs, nodejs stack. I am working myself to gain that knowledge as much as I can.</p>
+          <p>I have {moment().diff(moment("2021-06-01"), 'years')} years of industrial experience. In this period of time I am working with reactjs, nodejs stack. I am working myself to gain that knowledge as much as I can.</p>
           {/* <h3>Education</h3>
           <ul>
             <li>

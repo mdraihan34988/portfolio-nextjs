@@ -10,6 +10,39 @@ import Projects from 'components/Projects';
 export default function Project() {
   const projectsProfesional = [
     {
+      id: 11,
+      name: "ORSFX",
+      coverURL: "/assets/orsfx.png",
+      description:
+        "MetaTrader5 based trading monitor and manage web CRM, TGR",
+      githubURL: "",
+      previewURL: "https://www.orsfx.com/",
+      tools: ["reactjs","mssql","ASP.NET Core (C#)"],
+      pinned: false,
+    },
+    {
+      id: 11,
+      name: "Nomadiccare",
+      coverURL: "/assets/ncare.png",
+      description:
+        "Developed a healthcare provider system enabling clinicians to coordinate and manage patient care through a mobile application.",
+      githubURL: "",
+      previewURL: "https://nomadiccare.com.au/",
+      tools: ["reactjs","firebase","swift(ios)","kotlin(android)"],
+      pinned: false,
+    },
+    {
+      id: 5,
+      name: "Pharmacy & Healthcare Platform",
+      coverURL: "/assets/epharma.png",
+      description:
+        "Work on a online pharmacy and healthcare platform. Where any person can order medicine",
+      githubURL: "",
+      previewURL: "https://www.epharma.com.bd/",
+      tools: ["laravel","mysql"],
+      pinned: false,
+    },
+    {
       id: 10,
       name: "Employee Recognition.",
       coverURL: "/assets/loopstar.png",
@@ -31,17 +64,7 @@ export default function Project() {
       tools: ["nextjs", "reactjs","laravel","mssql","docker","google cloud run"],
       pinned: false,
     },
-    {
-      id: 5,
-      name: "Pharmacy & Healthcare Platform",
-      coverURL: "/assets/epharma.png",
-      description:
-        "Work on a online pharmacy and healthcare platform. Where any person can order medicine",
-      githubURL: "",
-      previewURL: "https://www.epharma.com.bd/",
-      tools: ["laravel","mysql"],
-      pinned: false,
-    },
+    
     {
       id: 7,
       name: "Admin Panel to manage Twtor",
