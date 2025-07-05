@@ -122,6 +122,17 @@ export default function Project() {
     //   pinned: false,
     // },
     {
+      id: 20,
+      name: "Global Technologies Website",
+      coverURL: "/assets/global-gr.png",
+      description:
+        "A japanese client website",
+      githubURL: "",
+      previewURL: "https://global-gr.jp/",
+      tools: ["html","tailwind css","javascript"],
+      pinned: false,
+    },
+    {
       id: 4,
       name: "Fundrising Application",
       coverURL: "/assets/peakfund.png",

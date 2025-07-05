@@ -15,7 +15,7 @@ export default function About() {
         </h1>
         <div className="mb-8 prose dark:prose-dark px-6">
           <h3>Job Title</h3>
-          <p>Md. Raihanul Islam, Associate Software Engineer at <b>Line Reflection LTD</b></p>
+          <p>Md. Raihanul Islam, Lead Software Engineer at <b><Link target="_blank" href={"https://linereflection.com/"} passHref className='cursor-pointer'>Line Reflection LTD</Link></b></p>
           <h3>Bio</h3>
           <p>I have {moment().diff(moment("2021-06-01"), 'years')} years of industrial experience. In this period of time I am working with reactjs, nodejs stack. I am working myself to gain that knowledge as much as I can.</p>
           {/* <h3>Education</h3>
@@ -74,6 +74,14 @@ export default function About() {
           <ul className="flex gap-6 flex-col md:flex-row about-ul">
             <li className=" w-full md:w-1/2"><span className="font-bold">City : </span>Dhaka</li>
             <li className=" w-full md:w-1/2"><span className="font-bold">Country : </span>Bangladesh</li>
+          </ul>
+          <ul className="flex gap-6 flex-col md:flex-row about-ul">
+            <li className=" w-full md:w-1/2"><span className="font-bold">Height : </span>5<sup>'</sup>4<sup>"</sup></li>
+            <li className=" w-full md:w-1/2"><span className="font-bold">Weight : </span>72kg</li>
+          </ul>
+          <ul className="flex gap-6 flex-col md:flex-row about-ul">
+            <li className=" w-full md:w-1/2"><span className="font-bold">Blood Group : </span>O<sup>+</sup></li>
+            <li className=" w-full md:w-1/2"><span className="font-bold">Religion : </span>Islam</li>
           </ul>
           <ul className="flex gap-6 flex-col md:flex-row about-ul">
             <li className=" w-full md:w-1/2"><span className="font-bold">Gender : </span>Male</li>

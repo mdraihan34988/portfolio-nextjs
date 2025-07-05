@@ -16,7 +16,7 @@ export default function Contact() {
                         Address: Narayanganj, Dhaka, Bangladesh.
                         </li>
                         <li>
-                        Phone: +880-17800-34452
+                        Phone: +880 17800-34452
                         </li>
                         <li>
                         Email: <a href="mailto:mdraihanulislam716@gmail.com">mdraihanulislam716@gmail.com</a>
