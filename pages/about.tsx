@@ -8,16 +8,22 @@ import moment from 'moment';
 
 export default function About() {
   return (
-    <Container title="About – Raihanul Islam">
+    <Container
+      title="About Md. Raihanul Islam – Full Stack Software Engineer"
+      description="Learn about Md. Raihanul Islam, a Lead Software Engineer and Senior Software Engineer Remote with experience in React, Next.js, Node.js, Laravel, Spring Boot, healthcare software, SaaS, eCommerce, CRM, LMS, and payment integrations."
+    >
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full pt-4">
         <h1 className="font-bold text-xl md:text-3xl tracking-tight text-black dark:text-white">
           About Me
         </h1>
         <div className="mb-8 prose dark:prose-dark px-6">
           <h3>Job Title</h3>
-          <p>Md. Raihanul Islam, Lead Software Engineer at <b><Link target="_blank" href={"https://linereflection.com/"} passHref className='cursor-pointer'>Line Reflection LTD</Link></b></p>
+          <p>Md. Raihanul Islam, Lead Software Engineer at <b><Link target="_blank" href={"https://linereflection.com/"} passHref className='cursor-pointer'>Line Reflection LTD</Link></b> and Senior Software Engineer at <b><Link target="_blank" href={"https://nomadiccare.com.au/"} passHref className='cursor-pointer'>Nomadiccare</Link></b> Remote</p>
           <h3>Bio</h3>
-          <p>I have {moment().diff(moment("2021-06-01"), 'years')} years of industrial experience. In this period of time I am working with reactjs, nodejs stack. I am working myself to gain that knowledge as much as I can.</p>
+          <p>I am a full-stack software engineer focused on building scalable, maintainable, and user-friendly business applications. I have {moment().diff(moment("2021-06-01"), 'years')} years of professional industry experience and {moment().diff(moment("2019-06-01"), 'years')} years of hands-on software development experience across React, Next.js, Node.js, Laravel, Spring Boot, MySQL, MSSQL, Firebase, Docker, and cloud deployment workflows.</p>
+          <p>At Line Reflection LTD, I lead full-stack development for production applications across SaaS, eCommerce, CRM, LMS, finance, healthcare, and payment-enabled platforms. At Nomadiccare, I work remotely as a Senior Software Engineer on connected healthcare products that help clinicians and care teams manage digital care plans, patient engagement, and mobile-first care workflows.</p>
+          <h3>Core Skillset</h3>
+          <p>React.js, Next.js, JavaScript, TypeScript, Node.js, Express.js, Laravel, PHP, Spring Boot, REST API, MySQL, MSSQL, PostgreSQL, Firebase, Redis, Kafka, Docker, AWS, Google Cloud Run, Tailwind CSS, Bootstrap, Git, payment gateway integration, healthcare workflow development, SaaS architecture, eCommerce platforms, CRM systems, LMS products, and admin dashboards.</p>
           {/* <h3>Education</h3>
           <ul>
             <li>
@@ -64,7 +70,7 @@ export default function About() {
           </ul> */}
           <h3>Personal Information</h3>
           <ul className="flex gap-6 flex-col md:flex-row about-ul ">
-            <li className=" w-full md:w-1/2"><span className="font-bold">Work : </span>Software Engineer</li>
+            <li className=" w-full md:w-1/2"><span className="font-bold">Work : </span>Lead Software Engineer</li>
             <li className=" w-full md:w-1/2"><span className="font-bold">Freelance : </span>Available</li>
           </ul>
           <ul className="flex gap-6 flex-col md:flex-row about-ul">

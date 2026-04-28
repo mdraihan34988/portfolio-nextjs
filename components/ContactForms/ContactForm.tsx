@@ -26,14 +26,32 @@ export default function Form() {
 
   function sendEmail(e) {
     e.preventDefault();
+    const serviceId = process.env.NEXT_PUBLIC_YOUR_SERVICE_ID;
+    const templateId = process.env.NEXT_PUBLIC_YOUR_TEMPLATE_ID;
+    const publicKey = process.env.NEXT_PUBLIC_YOUR_USER_ID;
+
+    if (!serviceId || !templateId || !publicKey) {
+      toast.error("Email service is not configured. Please email me directly.");
+      return;
+    }
+
     setLoading(true);
+    const fromName = `${emailInfo.first_name} ${emailInfo.last_name}`.trim();
+    const templateParams = {
+      ...emailInfo,
+      name: fromName,
+      from_name: fromName,
+      from_email: emailInfo.email,
+      reply_to: emailInfo.email,
+      user_email: emailInfo.email,
+    };
 
     emailjs
       .send(
-        process.env.NEXT_PUBLIC_YOUR_SERVICE_ID,
-        process.env.NEXT_PUBLIC_YOUR_TEMPLATE_ID,
-        emailInfo,
-        process.env.NEXT_PUBLIC_YOUR_USER_ID
+        serviceId,
+        templateId,
+        templateParams,
+        publicKey
       )
       .then((res) => {
         setLoading(false);
@@ -41,9 +59,9 @@ export default function Form() {
         toast.success("Message Sent ✌");
       })
       .catch((err) => {
-        console.log(err.text);
+        console.log(err);
         setLoading(false);
-        toast.error("😢 " + err.text);
+        toast.error("Message failed. Please email me directly.");
       });
   }
 
@@ -160,7 +178,7 @@ export default function Form() {
           className="relative z-0 w-full mb-6 group"
         >
           <input
-            type="subject"
+            type="text"
             name="subject"
             id="floating_subject"
             className="block py-2 mt-2 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-white focus:outline-none focus:ring-0 focus:border-black peer"
@@ -206,6 +224,16 @@ export default function Form() {
             Message
           </label>
         </motion.div>
+        <p className="mb-4 text-center text-sm text-gray-500 dark:text-gray-400">
+          If the form does not work, email me at{" "}
+          <a
+            href="mailto:mdraihanulislam716@gmail.com"
+            className="font-semibold text-gray-700 underline dark:text-gray-200"
+          >
+            mdraihanulislam716@gmail.com
+          </a>
+          .
+        </p>
 
         <motion.div
           variants={mobileNavItemSideways}

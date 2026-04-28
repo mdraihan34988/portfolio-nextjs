@@ -74,11 +74,58 @@ export default function Container(props) {
   const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
-    title: 'Raihanul Islam – Software Engineer',
-    description: `Software Engineer, Full Stack Developer, JavaScript enthusiast`,
-    image: 'https://mdraihan.netlify.app/static/images/lee-banner.png',
+    title: 'Md. Raihanul Islam – Lead Software Engineer | Full Stack Developer',
+    description: `Md. Raihanul Islam is a Lead Software Engineer and Senior Software Engineer specializing in React, Next.js, Node.js, Laravel, Spring Boot, healthcare platforms, SaaS, eCommerce, CRM, LMS, and scalable full-stack web applications.`,
+    image: 'https://mdraihan.netlify.app/avatar.jpg',
+    keywords:
+      'Md Raihanul Islam, Raihanul Islam, Lead Software Engineer, Senior Software Engineer, Full Stack Developer, React Developer, Next.js Developer, Node.js Developer, Laravel Developer, Spring Boot Developer, JavaScript Developer, TypeScript Developer, Healthcare Software Engineer, SaaS Developer, Dhaka Bangladesh Software Engineer',
     type: 'website',
     ...customMeta
+  };
+  const siteUrl = `https://mdraihan.netlify.app${router.asPath}`;
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: 'Md. Raihanul Islam',
+    url: 'https://mdraihan.netlify.app',
+    image: meta.image,
+    jobTitle: ['Lead Software Engineer', 'Senior Software Engineer', 'Full Stack Developer'],
+    worksFor: [
+      {
+        '@type': 'Organization',
+        name: 'Line Reflection LTD',
+        url: 'https://linereflection.com/'
+      },
+      {
+        '@type': 'Organization',
+        name: 'Nomadiccare',
+        url: 'https://nomadiccare.com.au/'
+      }
+    ],
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Dhaka',
+      addressCountry: 'Bangladesh'
+    },
+    sameAs: [
+      'https://www.linkedin.com/in/mdraihanulislam/',
+      'https://github.com/mdraihan34988'
+    ],
+    knowsAbout: [
+      'React',
+      'Next.js',
+      'Node.js',
+      'Laravel',
+      'Spring Boot',
+      'MySQL',
+      'MSSQL',
+      'Firebase',
+      'Healthcare Software',
+      'SaaS',
+      'eCommerce',
+      'CRM',
+      'Learning Management Systems'
+    ]
   };
 
   return (
@@ -87,13 +134,23 @@ export default function Container(props) {
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
-        <meta property="og:url" content={`https://mdraihan.netlify.app${router.asPath}`} />
-        <link rel="canonical" href={`https://mdraihan.netlify.app${router.asPath}`} />
+        <meta name="keywords" content={meta.keywords} />
+        <meta name="author" content="Md. Raihanul Islam" />
+        <meta property="og:url" content={siteUrl} />
+        <link rel="canonical" href={siteUrl} />
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content="Raihanul Islam" />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:image" content={meta.image} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={meta.title} />
+        <meta name="twitter:description" content={meta.description} />
+        <meta name="twitter:image" content={meta.image} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
         {meta.date && (
           <meta property="article:published_time" content={meta.date} />
         )}

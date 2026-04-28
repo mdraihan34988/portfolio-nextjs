@@ -215,6 +215,22 @@ input[type='email'] {
   @apply my-2;
 }
 
+.company-badge {
+  @apply mb-4 inline-flex min-h-[48px] items-center gap-3 rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm font-semibold text-gray-800 shadow-sm transition hover:border-gray-300 hover:bg-gray-50 dark:border-gray-700 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-100;
+}
+
+.company-badge span {
+  @apply min-w-0 break-words leading-snug;
+}
+
+.portfolio-card {
+  @apply bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 border border-gray-200 dark:border-gray-800 rounded-lg p-4 w-full shadow-sm;
+}
+
+.portfolio-link {
+  @apply text-blue-600 hover:text-blue-700 dark:text-blue-300 dark:hover:text-blue-200;
+}
+
 .step > h3 {
   @apply my-0;
 }

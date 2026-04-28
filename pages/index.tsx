@@ -11,29 +11,67 @@ import SkillSection from 'components/SkillSection';
 import moment from 'moment';
 
 export default function Home() {
-  const skills = [ 
+  const currentCompanies = [
+    {
+      name: 'Line Reflection',
+      logo: '/assets/line-reflection-mark.png',
+      url: 'https://linereflection.com/',
+      width: 42,
+      height: 42,
+    },
+    {
+      name: 'Nomadiccare',
+      logo: '/assets/nomadiccare-mark.png',
+      url: 'https://nomadiccare.com.au/',
+      width: 42,
+      height: 42,
+    },
+  ];
+
+  const skills = [
     {
       name: "React.js",
-      level: 80,
+      level: 90,
       pinned: true,
     },
     {
       name: "Next.js",
-      level: 80,
+      level: 90,
       pinned: true,
-    }, {
-      name: "Javascript",
+    },
+    {
+      name: "JavaScript",
+      level: 90,
+      pinned: true,
+    },
+    {
+      name: "TypeScript",
       level: 80,
       pinned: true,
     },
     {
       name: "Node.js",
-      level: 50,
-      pinned: false,
+      level: 85,
+      pinned: true,
     },
     {
+      name: "Express.js",
+      level: 80,
+      pinned: true,
+    },
+    // {
+    //   name: "PHP",
+    //   level: 85,
+    //   pinned: true,
+    // },
+    {
       name: "Laravel",
-      level: 50,
+      level: 85,
+      pinned: true,
+    },
+    {
+      name: "Spring Boot",
+      level: 80,
       pinned: true,
     },
     {
@@ -42,80 +80,87 @@ export default function Home() {
       pinned: true,
     },
     {
-      name: "Git",
-      level: 95,
+      name: "MSSQL",
+      level: 80,
       pinned: true,
-    },{
-      name: "HTML",
-      level: 100,
+    },
+    // {
+    //   name: "PostgreSQL",
+    //   level: 75,
+    //   pinned: true,
+    // },
+    {
+      name: "Firebase",
+      level: 80,
       pinned: true,
     },
     {
-      name: "CSS",
+      name: "AWS",
+      level: 75,
+      pinned: true,
+    },
+    {
+      name: "Google Cloud Run",
+      level: 75,
+      pinned: true,
+    },
+    {
+      name: "Docker",
+      level: 75,
+      pinned: true,
+    },
+    {
+      name: "Redis",
+      level: 70,
+      pinned: true,
+    },
+    {
+      name: "Kafka",
+      level: 70,
+      pinned: true,
+    },
+    {
+      name: "Tailwind CSS",
+      level: 90,
+      pinned: true,
+    },
+    {
+      name: "Bootstrap",
+      level: 85,
+      pinned: true,
+    },
+    {
+      name: "Redux Toolkit",
+      level: 85,
+      pinned: true,
+    },
+    {
+      name: "Socket.IO",
+      level: 80,
+      pinned: true,
+    },
+    // {
+    //   name: "HTML",
+    //   level: 95,
+    //   pinned: true,
+    // },
+    // {
+    //   name: "CSS",
+    //   level: 95,
+    //   pinned: true,
+    // },
+    {
+      name: "Git",
       level: 95,
       pinned: true,
     },
- 
-  // {
-  //   name: "SASS",
-  //   level: 80,
-  //   pinned: false,
-  // },
-  {
-    name: "Bootstrap",
-    level: 90,
-    pinned: true,
-  },
-  {
-    name: "Tailwind CSS",
-    level: 100,
-    pinned: true,
-  },
-  {
-    name: "Spring Boot",
-    level: 100,
-    pinned: true,
-  },
-  // {
-  //   name: "C Programming",
-  //   level: 80,
-  //   pinned: false,
-  // },
-  // {
-  //   name: "C++",
-  //   level: 60,
-  //   pinned: false,
-  // },
-  // {
-  //   name: "Python",
-  //   level: 85,
-  //   pinned: true,
-  // },
-
-  // {
-  //   name: "Firebase",
-  //   level: 60,
-  //   pinned: true,
-  // },
-  // {
-  //   name: "Data Structure",
-  //   level: 60,
-  //   pinned: false,
-  // },
-  // {
-  //   name: "MS Office",
-  //   level: 70,
-  //   pinned: false,
-  // },
-  // {
-  //   name: "Figma",
-  //   level: 70,
-  //   pinned: false,
-  // },
-]
+  ]
   return (
     <Suspense fallback={null}>
-      <Container>
+      <Container
+        title="Md. Raihanul Islam – Lead Software Engineer | React, Next.js, Node.js"
+        description="Portfolio of Md. Raihanul Islam, Lead Software Engineer at Line Reflection LTD and Senior Software Engineer at Nomadiccare Remote. Full-stack developer specializing in React, Next.js, Node.js, Laravel, Spring Boot, SaaS, healthcare, eCommerce, CRM, LMS, and payment platforms."
+      >
         <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-16 pt-4">
           <div className="flex w-[100%] sm:w-[100%] m-4 relative justify-center">
                 <Image
@@ -133,12 +178,48 @@ export default function Home() {
               <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white" >
                 Md. Raihanul Islam
               </h1>
-              <h2 className="text-gray-700 dark:text-gray-200 mb-4">
-                Lead Software Engineer at{' '}
-                <span className="font-semibold">Line Reflection LTD</span>
+              <h2 className="text-gray-700 dark:text-gray-200 mb-4 leading-7">
+                <span className="block">
+                  Lead Software Engineer at{' '}
+                  <Link href="https://linereflection.com/" passHref>
+                    <a target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-blue-600 dark:hover:text-blue-400">
+                      Line Reflection LTD
+                    </a>
+                  </Link>
+                </span>
+                <span className="block">
+                  Senior Software Engineer at{' '}
+                  <Link href="https://nomadiccare.com.au/" passHref>
+                    <a target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-blue-600 dark:hover:text-blue-400">
+                      Nomadiccare
+                    </a>
+                  </Link>
+                  {' '}Remote
+                </span>
               </h2>
+              <div className="mb-5 flex w-full flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap">
+                {currentCompanies.map((company) => (
+                  <Link href={company.url} passHref key={company.name}>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex min-h-[64px] w-full max-w-[405px] items-center justify-center gap-5 rounded-xl border border-gray-200 bg-white px-6 py-4 text-xl font-semibold text-gray-800 shadow-md transition-all hover:bg-gray-100 dark:border-gray-800 dark:bg-gray-900 dark:text-gray-100 dark:hover:bg-gray-800 sm:w-auto"
+                    >
+                      <Image
+                        alt={`${company.name} logo`}
+                        height={company.height}
+                        width={company.width}
+                        src={company.logo}
+                        sizes={`${company.width}px`}
+                        className="object-contain"
+                      />
+                      <span>{company.name}</span>
+                    </a>
+                  </Link>
+                ))}
+              </div>
               <p className="text-gray-600 dark:text-gray-400 mb-4 text-justify	">
-              I am a software engineer with {moment().diff(moment("2019-06-01"), 'years')} years of hands-on experience in crafting full-stack web applications using the latest technologies. My journey has led me through a diverse landscape of modern frameworks and tools, including React, Next.js, Node.js, Laravel, and Spring. I thrive on turning complex challenges into elegant solutions, particularly in areas such as PHP Laravel applications, eCommerce platforms, SaaS solutions, and Learning Management Systems (LMS). My expertise extends to integrating payment gateways, ensuring smooth and secure transactions for users. Passionate about building intuitive and high-performance applications, I enjoy pushing the boundaries of what's possible with technology.              </p>
+              I am a full-stack software engineer with {moment().diff(moment("2019-06-01"), 'years')} years of hands-on experience building production-grade web, SaaS, healthcare, eCommerce, CRM, LMS, and payment-driven applications. My core stack includes React, Next.js, Node.js, Laravel, Spring Boot, MySQL, MSSQL, Firebase, Docker, and cloud deployment workflows. As Lead Software Engineer at Line Reflection LTD and Senior Software Engineer at Nomadiccare Remote, I focus on clean architecture, reliable APIs, responsive interfaces, database design, third-party integrations, and maintainable delivery for real business products.              </p>
               <div className="flex gap-6 flex-col md:flex-row">
               <Link href={`/Raihanul_Islam_Resume.pdf`} >
               <a
