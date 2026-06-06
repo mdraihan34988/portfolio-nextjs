@@ -4,12 +4,7 @@ import Image from 'next/future/image';
 import Container from 'components/Container';
 import PostCard from 'components/PostCard';
 
-import { FaCloud, FaPaintBrush } from "react-icons/fa";
-import { FaMobile } from "react-icons/fa";
-import { FaWordpress } from "react-icons/fa";
-import { FaCode } from "react-icons/fa";
-import { FaDesktop } from "react-icons/fa";
-import { FaServer } from "react-icons/fa";
+import { FaCloud, FaPaintBrush, FaMobile, FaWordpress, FaCode, FaDesktop, FaServer, FaBrain, FaRobot } from "react-icons/fa";
 
 export default function Service() {
   return (
@@ -123,7 +118,7 @@ export default function Service() {
                         text = {<div dangerouslySetInnerHTML={{ __html: "I can develop mobile application using react native." }}></div>}
                         icon = {<FaMobile className="h-9 w-9"/>}
                     />
-                    
+
                     <PostCard
                         title="MSSQL MYSQL MongoDB"
                         slug="projects"
@@ -131,14 +126,23 @@ export default function Service() {
                         text = {<div dangerouslySetInnerHTML={{ __html: "I can use mssql, mysql or mongodb for develop any application." }}></div>}
                         icon = {<FaServer className="h-9 w-9"/>}
                     />
-                   
-                      
-                    {/* <PostCard
-                        title="Past, Present, and Future of React State Management"
-                        slug="react-state-management"
-                        gradient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
-                        text = "I can build Web application by using NODE js for back end"
-                    /> */}
+                </div>
+
+                <div className="flex gap-6 flex-col md:flex-row pt-4">
+                    <PostCard
+                        title="AI Augmented DevOps"
+                        slug="projects"
+                        gradient="from-[#6366F1] to-[#8B5CF6]"
+                        text={<div dangerouslySetInnerHTML={{ __html: "I apply AI tools (<b>Claude, Codex, K8sGPT</b>) alongside <b>Kubernetes, ArgoCD, Terraform, Cloudflare, Prometheus, and Grafana</b> to architect cloud-native infrastructure, automate deployment pipelines, run load testing, and drive infrastructure operations at scale — achieving up to 93% cloud cost reduction." }}></div>}
+                        icon={<FaRobot className="h-9 w-9 text-[#6366F1]"/>}
+                    />
+                    <PostCard
+                        title="AI Augmented Software Development"
+                        slug="projects"
+                        gradient="from-[#D97757] to-[#F59E0B]"
+                        text={<div dangerouslySetInnerHTML={{ __html: "I use AI-augmented workflows with <b>Claude Code, Codex, Goose, Minimax, and OpenCode</b> to accelerate feature delivery, improve code quality, automate mobile E2E testing with Maestro, and build production-grade web and mobile applications more efficiently." }}></div>}
+                        icon={<FaBrain className="h-9 w-9 text-[#D97757]"/>}
+                    />
                 </div>
 
             </div>

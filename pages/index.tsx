@@ -54,16 +54,46 @@ export default function Home() {
       level: 85,
       pinned: true,
     },
+    // {
+    //   name: "Express.js",
+    //   level: 80,
+    //   pinned: true,
+    // },
     {
-      name: "Express.js",
-      level: 80,
+      name: "PHP",
+      level: 85,
       pinned: true,
     },
     // {
-    //   name: "PHP",
-    //   level: 85,
+    //   name: "Java",
+    //   level: 75,
     //   pinned: true,
     // },
+    // {
+    //   name: "Kotlin",
+    //   level: 75,
+    //   pinned: true,
+    // },
+    // {
+    //   name: "Swift",
+    //   level: 70,
+    //   pinned: true,
+    // },
+    // {
+    //   name: "Angular",
+    //   level: 75,
+    //   pinned: true,
+    // },
+    // {
+    //   name: "NestJS",
+    //   level: 75,
+    //   pinned: true,
+    // },
+    {
+      name: "ASP.NET Core",
+      level: 75,
+      pinned: true,
+    },
     {
       name: "Laravel",
       level: 85,
@@ -89,6 +119,11 @@ export default function Home() {
     //   level: 75,
     //   pinned: true,
     // },
+    // {
+    //   name: "MongoDB",
+    //   level: 75,
+    //   pinned: true,
+    // },
     {
       name: "Firebase",
       level: 80,
@@ -110,12 +145,22 @@ export default function Home() {
       pinned: true,
     },
     {
-      name: "Redis",
+      name: "Kubernetes",
       level: 70,
       pinned: true,
     },
     {
-      name: "Kafka",
+      name: "Terraform",
+      level: 70,
+      pinned: true,
+    },
+    {
+      name: "GitHub Actions",
+      level: 75,
+      pinned: true,
+    },
+    {
+      name: "Redis",
       level: 70,
       pinned: true,
     },
@@ -129,16 +174,11 @@ export default function Home() {
       level: 85,
       pinned: true,
     },
-    {
-      name: "Redux Toolkit",
-      level: 85,
-      pinned: true,
-    },
-    {
-      name: "Socket.IO",
-      level: 80,
-      pinned: true,
-    },
+    // {
+    //   name: "Redux Toolkit",
+    //   level: 85,
+    //   pinned: true,
+    // },
     // {
     //   name: "HTML",
     //   level: 95,
@@ -149,11 +189,23 @@ export default function Home() {
     //   level: 95,
     //   pinned: true,
     // },
-    {
-      name: "Git",
-      level: 95,
-      pinned: true,
-    },
+    // {
+    //   name: "Git",
+    //   level: 95,
+    //   pinned: true,
+    // },
+  ]
+
+  const aiTools = [
+    { name: "Claude", pinned: true },
+    { name: "Codex", pinned: true },
+    { name: "Minimax", pinned: true },
+    { name: "OpenCode", pinned: true },
+    { name: "K8sGPT", pinned: true },
+    { name: "Goose", pinned: true },
+    { name: "Playwright", pinned: true },
+    { name: "Maestro", pinned: true },
+    { name: "Cursor", pinned: true },
   ]
   return (
     <Suspense fallback={null}>
@@ -219,7 +271,7 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-gray-600 dark:text-gray-400 mb-4 text-justify	">
-              I am a full-stack software engineer with {moment().diff(moment("2019-06-01"), 'years')} years of hands-on experience building production-grade web, SaaS, healthcare, eCommerce, CRM, LMS, and payment-driven applications. My core stack includes React, Next.js, Node.js, Laravel, Spring Boot, MySQL, MSSQL, Firebase, Docker, and cloud deployment workflows. As Lead Software Engineer at Line Reflection LTD and Senior Software Engineer at Nomadiccare Remote, I focus on clean architecture, reliable APIs, responsive interfaces, database design, third-party integrations, and maintainable delivery for real business products.              </p>
+              I am a full-stack software engineer with {moment().diff(moment("2019-06-01"), 'years')} years of hands-on experience building production-grade web, SaaS, healthcare, eCommerce, CRM, LMS, and payment-driven applications. My core stack includes React, Next.js, Node.js, Laravel, Spring Boot, MySQL, MSSQL, Firebase, Docker, and cloud deployment workflows. As Lead Software Engineer at Line Reflection LTD and Senior Software Engineer at Nomadiccare Remote, I focus on clean architecture, reliable APIs, responsive interfaces, database design, third-party integrations, and maintainable delivery for real business products. I actively apply AI-augmented development and DevOps practices — using Claude, Codex, Minimax, and OpenCode to accelerate feature delivery and infrastructure operations.              </p>
               <div className="flex gap-6 flex-col md:flex-row">
               <Link href={`/Raihanul_Islam_Resume.pdf`} >
               <a
@@ -371,6 +423,7 @@ export default function Home() {
           <Subscribe /> */}
            <div className="pt-4 text-black">
               <SkillSection skills={skills} />
+              <SkillSection title="AI & Automation Tools" skills={aiTools} />
               {/* <BlogsSection blogs={blogs} />
               <Contact /> */}
             </div>

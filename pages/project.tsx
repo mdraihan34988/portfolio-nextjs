@@ -14,10 +14,10 @@ export default function Project() {
       name: "Nomadiccare",
       coverURL: "/assets/ncare.png",
       description:
-        "Currently working remotely on a digital healthcare platform that helps clinicians create care plans, coordinate patient engagement, and support connected care through web and mobile applications.",
+        "A connected healthcare SaaS platform serving clinicians, care teams, and patients across Australia. Delivered as a cross-platform suite: React.js care team portal (care plan management, patient health task tracking, provider directory, HealthEngine appointment booking, telehealth video & chat, health notes, document workflows, Google Drive integration, progress & badges, Stripe subscription billing, SMS/OTP notifications, fall prevention, admin management); native iOS app (Swift) and Android app (Kotlin v1.2.0) for patients (health monitoring tasks — blood pressure, blood glucose, BMI, sleep, steps, weight, calories, pain level — progress tracking, gamified badges, telehealth chat via Firebase RTDB, care buddy, referrals, onboarding); Firebase Cloud Functions backend (Node.js, australia-southeast1) with 14 API domains covering auth, health task completion, Stripe billing, SMS/OTP, fall prevention, video/telehealth, webhooks, and Firestore scheduled triggers. Applied AI-augmented development with Claude Code and Maestro for automated mobile E2E testing.",
       githubURL: "",
       previewURL: "https://nomadiccare.com.au/",
-      tools: ["remote","reactjs","firebase","swift(ios)","kotlin(android)"],
+      tools: ["remote","reactjs","swift","kotlin","firebase","firestore","nodejs","stripe","healthengine","claude code","maestro"],
       pinned: false,
     },
     {
@@ -29,6 +29,17 @@ export default function Project() {
       githubURL: "",
       previewURL: "https://www.epharma.com.bd/",
       tools: ["laravel","mysql"],
+      pinned: false,
+    },
+    {
+      id: 30,
+      name: "CodersTrust JobReady",
+      coverURL: "/assets/jobready.png",
+      description:
+        "AI-augmented DevOps for a workforce development SaaS platform serving 270,000+ learners in Bangladesh. Led the full migration from AWS EKS to Vultr Kubernetes (VKE), reducing cloud costs by 93.5% (~$37,260/year saved). Applied Claude, Codex, and K8sGPT for infrastructure analysis, load testing (250+ VU with k6), performance optimisation, and operational decisions across Moodle LMS, WordPress+WooCommerce, Mautic CRM, Flux GitOps, Terraform IaC, Cloudflare WAF, Prometheus, and Grafana observability.",
+      githubURL: "",
+      previewURL: "https://www.jobready.global/",
+      tools: ["kubernetes","argocd","terraform","docker","cloudflare","k6","prometheus","grafana","claude","codex","k8sgpt"],
       pinned: false,
     },
     {

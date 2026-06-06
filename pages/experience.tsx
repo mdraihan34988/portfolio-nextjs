@@ -38,12 +38,13 @@ export default function Experience() {
                 </div>
                     <h2 className="font-bold mt-5 text-lg"><Link href="https://linereflection.com/"><a target="_blank" rel="noopener noreferrer" className="portfolio-link">Lead Software Engineer (Line Reflection LTD)</a></Link></h2>
                         <div className="mt-2 leading-7 text-gray-700 dark:text-gray-200">
-                            I currently work as Lead Software Engineer at Line Reflection LTD, building and maintaining production applications across healthcare, SaaS, CRM, eCommerce, LMS, finance, and payment-focused systems. My responsibilities include solution architecture, frontend implementation, backend API development, database design, code review, technical planning, deployment support, and delivery coordination -
+                            I currently work as Lead Software Engineer at Line Reflection LTD, building and maintaining production applications across healthcare, SaaS, CRM, eCommerce, LMS, finance, and payment-focused systems. My responsibilities include solution architecture, frontend implementation, backend API development, database design, code review, technical planning, deployment support, and delivery coordination. I lead AI-augmented DevOps for the CodersTrust JobReady platform — a large-scale Kubernetes migration from AWS EKS to Vultr VKE — using Claude, Codex, and K8sGPT to drive infrastructure decisions, load testing, and performance optimization.
                             <ul className="mt-2 px-6 list-disc">
                                     <li>Backend: <span className="font-bold"> Node.js, Laravel, Spring Boot </span></li>
                                     <li>Frontend:<span className="font-bold"> React.js, Next.js </span></li>
                                     <li>Database:<span className="font-bold"> MySQL, MSSQL, PostgreSQL </span></li>
-                                    <li>Delivery:<span className="font-bold"> Docker, AWS, Google Cloud Run, CI/CD workflows </span></li>
+                                    <li>Delivery:<span className="font-bold"> Docker, AWS, Google Cloud Run, CI/CD, ArgoCD, Kubernetes </span></li>
+                                    <li>AI DevOps:<span className="font-bold"> Claude, Codex, K8sGPT, AI-augmented infrastructure operations </span></li>
                             </ul>
                         </div>
                     </div>
@@ -74,11 +75,13 @@ export default function Experience() {
                 </div>
                     <h2 className="font-bold mt-5 text-lg"><Link href="https://nomadiccare.com.au/"><a target="_blank" rel="noopener noreferrer" className="portfolio-link">Senior Software Engineer - Remote (Nomadiccare)</a></Link></h2>
                         <div className="mt-2 leading-7 text-gray-700 dark:text-gray-200">
-                            I currently work remotely with Nomadiccare on digital healthcare products that help clinicians coordinate care plans, improve patient engagement, and deliver connected care experiences across web and mobile applications.
+                            I work remotely as a Senior Software Engineer on Nomadiccare — a connected healthcare SaaS platform serving clinicians, care teams, and patients across Australia. I contribute across the full cross-platform suite using AI-augmented development workflows with Claude Code and Maestro for automated mobile E2E testing.
                             <ul className="mt-2 px-6 list-disc">
-                                    <li>Frontend:<span className="font-bold"> React.js, responsive healthcare UI workflows </span></li>
-                                    <li>Mobile:<span className="font-bold"> Swift iOS, Kotlin Android </span></li>
-                                    <li>Platform:<span className="font-bold"> Firebase, care plan management, patient engagement </span></li>
+                                    <li>Web Portal:<span className="font-bold"> React.js </span> — care plan management, patient health task tracking, provider directory, HealthEngine appointment booking, telehealth video &amp; chat, health notes, document workflows, Google Drive integration, progress &amp; badges, Stripe subscription billing, SMS/OTP notifications, fall prevention, admin management</li>
+                                    <li>iOS:<span className="font-bold"> Swift </span> — patient app for health monitoring tasks (blood pressure, blood glucose, BMI, sleep, steps, weight, calories, pain level), gamified progress &amp; badges, telehealth chat via Firebase RTDB, care buddy, referrals, onboarding</li>
+                                    <li>Android:<span className="font-bold"> Kotlin (v1.2.0) </span> — full feature mirror of iOS, production &amp; staging environments, APK/AAB release pipeline</li>
+                                    <li>Backend:<span className="font-bold"> Firebase Cloud Functions (Node.js, australia-southeast1) </span> — 14 API domains covering auth, health task completion, Stripe billing, SMS/OTP, video/telehealth, webhooks, Firestore scheduled triggers</li>
+                                    <li>AI Tools:<span className="font-bold"> Claude Code </span> (AI-augmented development), <span className="font-bold">Playwright</span> (web E2E test automation), <span className="font-bold">Maestro</span> (mobile E2E test automation)</li>
                             </ul>
                         </div>
                     </div>
